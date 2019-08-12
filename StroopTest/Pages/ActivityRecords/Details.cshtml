@@ -1,0 +1,55 @@
+﻿@page
+@model StroopTest.Pages.ActivityRecords.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ActivityRecord</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.UserID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.UserID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.Phase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.Phase)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.Ink)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.Ink)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityRecord.Time)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActivityRecord.Time)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ActivityRecord.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

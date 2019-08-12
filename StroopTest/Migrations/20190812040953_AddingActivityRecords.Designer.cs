@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StroopTest.Models;
 
 namespace StroopTest.Migrations
 {
     [DbContext(typeof(StroopTestContext))]
-    partial class StroopTestContextModelSnapshot : ModelSnapshot
+    [Migration("20190812040953_AddingActivityRecords")]
+    partial class AddingActivityRecords
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
